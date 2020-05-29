@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.loc2_teacher {
+			height: 100px;
+			width: 80px;
+			margin-left: 55%; 
+			position: absolute; 
+			margin-top: 10%
+		}
+		.loc2_talk{
+			position: absolute;
+			width: 300px;
+			margin-left: 56%;
+			display: none
+		}
+
+		.loc2_pravilno{
+			background-color: gray; width: 100px; position: absolute; display: none
+		}
+
+		.loc2_player {
+			margin-left: 28%; margin-top: 26%; position: absolute;
+		}
+		.loc2_talkText {
+			position: absolute;
+			width: 200px;
+			margin-left: 59%;
+			margin-top: 3%;
+			display: none;
+			color: black
+		}
+		.loc2_shpors {
+			background-color: gray; width: 100px; position: absolute;
+		}
+		.loc2_timeSize {
+		font-size: 30px
+		}
+		.loc2_pole {
+			margin-top: 25%;
+			position: absolute;
+		}
+		.box{
+			background-image: url(school3.jpg);
+			background-size:100%,100%;
+			height: 1080px;
+			width: 1920px;
+		}
+		.text1{
+			position: absolute;
+			left: 800px;
+			top: 100px;
+			font-size:60px;
+		}
+		.text2{
+			position: absolute;
+			left: 780px;top: 230px;font-size:60px;
+			border: 0;
+   			padding: 0;
+   			font-family: cursive;
+		}
+		.test{
+			width: 1920px;
+			height: 1080px;
+			display: none ;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url(fon.jpg);
+		}
+		.test2{
+			width:1920px;
+			height: 1080px;
+			display: none;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url(fon.jpg);
+		}
+		.test3{
+			width: 1920px;
+			height: 1080px;
+			display: none;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url(fon.jpg);
+		}
+		.test4{
+			width: 1920px;
+			height: 1080px;
+			display: none;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url(fon.jpg);
+		}
+		.test5{
+			width: 1920px;
+			height: 1080px;
+			display: none;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url(fon.jpg);
+		}
+		.question{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: green;
+		}
+		.vopr{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.vopr2{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.vopr3{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.vopr4{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.vopr5{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.otvet{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.otvet2{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.otvet3{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.otvet4{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.otvet5{
+			font-family: arial;
+			font-weight: 15px;
+			text-align: center;
+			color: red;
+		}
+		.doska{
+			position: absolute;
+			top: 5%;
+			left: 38%;
+		}
+		.win{
+			width: 1920px;
+			height: 1080px;
+			background-image: url(wins.jpg);
+			background-size: 100% 100%;
+			display: none;
+		}
+		.zver{
+			font-family: arial;
+			font-weight: 35px;
+			text-align: center;
+			color: cyan;
+		}
+		.retr{
+			font-family: arial;
+			font-weight: 25px;
+			text-align: center;
+			color: purple;
+			
+		}
+		.gg{
+			padding-top: 150px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.dosk-text{
+			font-family: arial;
+			font-weight: 10px;
+			text-align: center;
+			color: purple;
+			margin-left: 24px;
+			position: absolute;
+			width: 340px;
+		}
+		.location2{
+			background-image: url(groot.jpg);
+			background-size: 100% 100%;
+			display: none;
+			width: 1920px;
+			height: 1080px;
+		}
+	</style>
+</head>
+<body>
+	<div class="test border-black border">
+		<h1 class="question">5x-9=3x+1</h1>
+		<h1 class="vopr ">x=1</h1>
+		<h1 class="vopr">x=-2</h1>
+		<h1 class="vopr">x=3</h1>
+		<h1 class="otvet">x=5</h1>
+	</div>
+	<div class="test2 border border">
+		<h1 class="question">3*(5-x)+13=4*(3x-8)</h1>
+		<h1 class="vopr2">x=-2</h1>
+		<h1 class="otvet2">x=4</h1>
+		<h1 class="vopr2">x=7</h1>
+		<h1 class="vopr2">x=-8</h1>
+	</div>
+	<div class="test3 border border">
+		<h1 class="question">4,37+6,7x=7,75+9,3x</h1>
+		<h1 class="otvet3">x=-1,3</h1>
+		<h1 class="vopr3">x=1,1</h1>
+		<h1 class="vopr3">x=-1,5</h1>
+		<h1 class="vopr3">x=1,8</h1>		
+	</div>
+	<div class="test4 border border">
+		<h1 class="question">Логарифм числа 16 по основанию 2=x</h1>
+		<h1 class="vopr4">x=-5</h1>
+		<h1 class="vopr4">x=2</h1>
+		<h1 class="otvet4">x=4</h1>
+		<h1 class="vopr4">x=-3</h1>		
+	</div>
+	<div class="test5 border border">
+		<h1 class="question">sin(90)+cos(90)=x</h1>
+		<h1 class="vopr5">x=0</h1>
+		<h1 class="otvet5">x=1</h1>
+		<h1 class="vopr5">x=2</h1>
+		<h1 class="vopr5">x=180</h1>
+	</div>
+	<div class="win">
+		<div class="gg">
+			<h1 class="zver">Ты прошел игру оценку ты сам уже видел</h1>
+		</div>
+	</div>
+	<div class="box">
+	<h1 class="text1">Menu</h1>
+	<button class="text2">Играть</button>
+	</div>
+	<div class="loc2"></div>
+	<div class="location2">
+		<div class="col-4 doska">
+			<img src="Loc2/doska.png" style="position: absolute; width: 390px" >
+			<h4 class="dosk-text">Итоговая контроьная работа по алгебре "Если что вам лень решать то просто посмотрите в коде ответы их класс otvet"</h4>
+		</div>
+		<div class="loc2_teacher"></div>
+
+
+			<div style="position: absolute; margin-top: 17%; margin-left: 25%">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute;">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute; margin-left: 220px">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute; margin-left: 440px">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute; margin-left: 660px">			
+			</div>
+			<div style="position: absolute; margin-top: 25%; margin-left: 25%">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute;">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute;margin-left: 220px">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute;margin-left: 440px">
+				<img src="Loc2/stol.png" style="width: 200px; position: absolute;margin-left: 660px">			
+			</div>
+		<div class="loc2_ques" style="margin-left: 20%; position: absolute;  margin-top: 25%;">
+		</div>
+		<img src="Loc2/player_fall.png" class="loc2_player">
+		<img src="Loc2/talk.png" class="loc2_talk">
+		<div class="loc1_message">
+		</div>	
+	</div> 
+
+		<script type="text/javascript">
+		let game = document.querySelector(".text2")
+		let menu = document.querySelector(".box")
+		let classr = document.querySelector(".loc2")
+		let location2 = document.querySelector(".location2");
+		let test = document.querySelector(".test")
+		let vopr = document.querySelector(".vopr")
+		let vopr2 = document.querySelector(".vopr2")
+		let vopr3 = document.querySelector(".vopr3")
+		let vopr4 = document.querySelector(".vopr4")
+		let vopr5 = document.querySelector(".vopr5")
+		let otvet = document.querySelector(".otvet")
+		let otvet2 = document.querySelector(".otvet2")
+		let otvet3 = document.querySelector(".otvet3")
+		let otvet4 = document.querySelector(".otvet4")
+		let otvet5 = document.querySelector(".otvet5")
+		let test2 = document.querySelector(".test2")
+		let test3 = document.querySelector(".test3")
+		let test4 = document.querySelector(".test4")
+		let test5 = document.querySelector(".test5")
+		let retro = document.querySelector(".retr")
+		let win = document.querySelector(".win")
+		let score = 0;
+		vopr.onclick = function(){
+			score = score - 1;
+		}
+		vopr2.onclick = function(){
+			score = score - 1;
+		}
+		vopr3.onclick = function(){
+			score = score - 1;
+		}
+		vopr4.onclick = function(){
+			score = score - 1;
+		}
+		vopr5.onclick = function(){
+			score = score - 1;
+			test5.style.display = "none"
+		}
+		otvet.onclick = function(){
+			test.style.display = "none"
+			test2.style.display = "block"
+			score = score + 3;
+		}
+		otvet2.onclick = function(){
+			test2.style.display = "none"
+			test3.style.display = "block"
+			score = score + 2;
+		}
+		otvet3.onclick = function(){
+			test3.style.display = "none"
+			test4.style.display = "block"
+			score = score + 3;
+		}
+		otvet4.onclick = function(){
+			test4.style.display = "none"
+			test5.style.display = "block"
+			score = score + 2;
+		}
+		otvet5.onclick = function(){
+			test5.style.display = "none"
+			score = score + 2;
+			if (score < 5) {alert("Фу ,двоечник, тебе надо остаться на второй год")}
+			if (score == 6) {alert("Тройка? тебе бы получше стараться")}
+			if (score == 7) {alert("Тройка? тебе бы получше стараться")}
+			if (score == 8) {alert("Тройка? тебе бы получше стараться")}
+			if (score == 9) {alert("Эх четверка до пяторки не дотянул")}
+			if (score == 10) {alert("Эх четверка до пяторки не дотянул")}
+			if (score == 11) {alert("Эх четверка до пяторки не дотянул")}
+			if (score == 12) {alert("Оу май ты что крейзи отличник ты наш")}
+			win.style.display = "block"
+		}
+		game.onclick = function(){
+			menu.style.display = "none"
+			location2.style.display = "block";
+		}
+		let contr = function(){
+			test.style.display = "block";
+		}
+		setTimeout(contr, 8000)
+		let nones = function(){
+			location2.style.display = "none"
+		}
+		setTimeout(nones, 8000)	
+	</script>
+</body>
+</html>
